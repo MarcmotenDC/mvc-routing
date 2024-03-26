@@ -13,6 +13,12 @@ $router->add("/products/show", ["controller" => "products", "action" => "show"])
 
 $params = $router->matchRoute($path);
 
+if ($params === false) {
+
+    exit("No matching route");
+
+}
+
 $controller = $params["controller"];
 $action = $params["action"];
 
