@@ -5,11 +5,11 @@ class Product
   public function getData(): array
   {
     $dsn = "mysql:
-        host=localhost;
-        dbname=blogsite;
-        charset=utf8;
-        port=3304";
-    $pdo = new PDO($dsn, "adv_php_user", "secret", [
+    host=mywebtraining.net;
+    dbname=sherd_SteveHarvey;
+    charset=utf8;
+    port=21";
+    $pdo = new PDO($dsn, "[username]", "[password]", [
       PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
 
